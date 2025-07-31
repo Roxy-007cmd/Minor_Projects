@@ -1,0 +1,80 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #777;
+}
+
+/* Services Container */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  color: #2980b9;
+  margin-bottom: 10px;
+}
+
+.card p {
+  line-height: 1.5;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .services-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .card {
+    flex: 0 1 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    flex: 0 1 40%;
+  }
+}
